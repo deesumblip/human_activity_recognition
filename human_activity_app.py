@@ -113,14 +113,14 @@ def run():
         st.set_option('deprecation.showfileUploaderEncoding', False)
 
         file_buffer = st.file_uploader("Upload csv file for predictions", type=["csv"])
-        text_io = io.TextIOWrapper(file_buffer)
-        if file_buffer is not None:
+
+        if file_buffer is None:
+            st.markdown('Upload a file to use the batch prediction feature')
+        elif file_buffer is not None:
             data = pd.read_csv(file_buffer)
             predictions = predict_model(estimator=model,data=data)
             st.write(predictions)
-        elif file_buffer is None:
-            st.markdown('Upload a file to use the batch prediction feature')
-
+        text_io = io.TextIOWrapper(file_buffer)
 if __name__ == '__main__':
     run()
 
