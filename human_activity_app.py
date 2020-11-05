@@ -108,7 +108,7 @@ def run():
     if add_selectbox == 'Batch':
         st.title("Batch Movement Prediction")
 
-        import io
+#       import io
 
         st.set_option('deprecation.showfileUploaderEncoding', False)
 
@@ -120,7 +120,7 @@ def run():
             data = pd.read_csv(file_buffer)
             predictions = predict_model(estimator=model,data=data)
             st.write(predictions)
-        text_io = io.TextIOWrapper(file_buffer)
+#        text_io = io.TextIOWrapper(file_buffer)
 if __name__ == '__main__':
     run()
 
