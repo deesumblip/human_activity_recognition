@@ -118,6 +118,8 @@ def run():
             data = pd.read_csv(file_buffer)
             predictions = predict_model(estimator=model,data=data)
             st.write(predictions)
+        elif file_buffer is None:
+            st.markdown('Upload a file to use the batch prediction feature')
 
 if __name__ == '__main__':
     run()
