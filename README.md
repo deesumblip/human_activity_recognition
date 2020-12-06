@@ -7,3 +7,5 @@ https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartph
 The repo also features files for a web app created using Streamlit. The .pkl file used for creating new predictions was generated using PyCaret.
 The data_unseen file is a portion of data not used in modelling but which has been referenced for forming new predictions in the app.
 See requirements.txt for more details.
+
+Find the app at: https://share.streamlit.io/deesumblip/human_activity_recognition/main/human_activity_app.py
