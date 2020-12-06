@@ -1,4 +1,4 @@
-# human_activity_recognition
+# human_activity_recognition [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deesumblip/human_activity_recognition/main/human_activity_app.py)
 This repo involves predicting human movement using data from the UCI Machine Learning Repository
 
 The original dataset can be found here:
